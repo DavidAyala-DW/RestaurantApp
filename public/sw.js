@@ -3,7 +3,6 @@ const name_catch="Restaurant App";
 // Cathc Files 
 const files=[
 
-    "/",
     "/error",
     "/home",
     "/menu",
