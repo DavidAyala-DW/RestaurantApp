@@ -1,0 +1,58 @@
+.darkmode{
+    background-color: $darkmode_color;
+    
+    h1,h2,h3,h4,p,a,span{
+        color: white;
+    }
+
+    .form_contact{
+        input{
+            -webkit-box-shadow: 0px 0px 0px 0px #000000 !important; 
+            box-shadow: 0px 0px 0px 0px #000000 !important; 
+        }
+    }
+    .flower-opacity,.antifilter{
+        filter: invert(1);
+    }
+    .fixed-bar{
+        background-color: $darkmode_color!important;
+        a{
+            color: white!important;
+        }
+        svg{
+            filter: invert(0);
+        }
+    }
+    .menu-bar{
+        a{
+            color: white;
+        }
+        @include m-tablet(){
+            background-color: $darkmode_color!important;
+            .show-menu{
+                @include m-tablet(){
+                    .icons{
+                        img{
+                            filter: invert(0)!important;
+                        }   
+                    }
+                }
+
+            }
+        }
+    }
+    .containerCapacity{
+        svg{
+            filter: invert(1);
+        }
+    }
+    .invert-bw-svg{
+        filter: invert(0);
+    }
+    .invert-wb-svg{
+        filter: invert(1);
+    }
+    .price{
+        color: white;
+    }
+}

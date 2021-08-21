@@ -1,0 +1,121 @@
+.header-reservation{
+    min-height: 30rem;
+    background-image: url("/build/img/pexels-elevate-1267315.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .mask{
+        min-height: 30rem;
+        background-color: rgb(0, 0, 0, .5);
+    }
+}
+.reservationEvents{
+    .actions{
+        @include m-phone(){
+            flex-direction: column;
+            gap: 5rem;
+            align-items: flex-start;
+            .logOutIcon{
+                order: 1;
+            }
+            .logOutButton{
+                order: 2;
+            }
+        }
+    }
+}
+.bg-reservation{
+
+    background-color: $blue;
+    border-radius: 1rem;
+    padding: 2rem;
+
+}
+
+.newReservation{
+    box-shadow: -1px 1px 19px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 1px 19px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 19px 0px rgba(0,0,0,0.75);
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    min-height: 30rem;
+    border-radius: 1rem;
+    position: fixed;
+    z-index: 1000;
+    bottom: -100%;
+    background-color: white;
+}
+.card-reservation{
+
+    box-shadow: -5px 6px 21px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -5px 6px 21px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px 6px 21px 0px rgba(0,0,0,0.75);
+
+    background-color: white;
+    border-radius: 1rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    max-width: 60rem;
+    p{
+        color: black;
+    }
+    span{
+        color: black;
+    }
+
+    display: flex;
+    flex-direction: column;
+    min-height: 20rem;
+    .infoCard{
+
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: flex-start  ;
+        align-items: center;
+        gap: 2rem;
+
+    }
+}
+
+.reservations{
+
+    .show_less{
+        height: 0;
+        width: 0;
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+    }
+    .Options{
+        position: absolute;
+    }
+    .containerOptions{
+        box-shadow: -3px 5px 11px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: -3px 5px 11px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: -3px 5px 11px 0px rgba(0,0,0,0.75);
+        z-index: 2;
+        width: max-content;
+        bottom: 6rem;
+        right: 9rem;
+        position: relative;
+        background-color: $bg-1;
+        padding: 2rem;
+        p{
+            text-align: start;            
+            color: white;
+            font-size: 2rem;
+        }
+        
+    }
+    .infoAdded{
+        bottom: 7rem;
+        right: 11rem;
+    }
+
+}
+.showFilters{
+    padding: 2rem;
+    bottom: -200%;
+    right: 0;
+    width: 20rem;
+}

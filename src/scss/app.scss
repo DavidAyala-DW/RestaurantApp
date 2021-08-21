@@ -1,0 +1,25 @@
+// BASES
+@import "base/_normalize.scss";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,400;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200;1,400&display=swap');
+//Fuente
+@import "base/__mixins.scss";
+@import "base/__globales.scss";
+@import "base/__variables.scss";
+@import "base/_darkmode.scss";
+@import "base/__helpers.scss";
+
+// layout
+@import "layout/_navbar.scss";
+@import "layout/_home.scss";
+@import "layout/_aboutUs.scss";
+@import "layout/_menu.scss";
+@import "layout/_gallery.scss";
+@import "layout/_reservation.scss";
+@import "layout/_contactUs.scss";
+@import "layout/_signIn.scss";
+@import "layout/_reservation.scss";
+@import "layout/_alert.scss";
+
+@import "layout/_footer.scss";
+@import "layout/_spinner.scss";

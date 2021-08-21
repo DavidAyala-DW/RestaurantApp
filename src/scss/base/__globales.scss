@@ -1,0 +1,65 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+} 
+
+body {
+
+    font-size: 1.6rem;
+    min-height: 95vh;
+    line-height: 1.8;
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    scroll-behavior: smooth;
+    position: relative;
+    padding-bottom: 8rem;
+    @include phone(){
+        padding-bottom: 8.8rem;
+    }
+    
+}
+
+img, picture {
+    width: 100%;
+    display: block;
+    cursor: none;
+    @include tablet(){
+        cursor: pointer;
+    }
+}
+h1 , h2 , h3 , h4, p{
+    color: black;
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+}
+
+svg{
+
+    height: 5rem;;
+    width:5rem;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;  
+    @include tablet(){
+        cursor:pointer;
+    }
+
+} 

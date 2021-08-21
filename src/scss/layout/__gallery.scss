@@ -1,0 +1,52 @@
+.header-gallery{
+    min-height: 30rem;
+    background-image: url("/build/img/brick-wall-1834784_1920.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .mask{
+        min-height: 30rem;
+        background-color: rgb(0, 0, 0, .5);
+    }
+}
+.platesGallery{
+    background-image: url("/build/img/platter-2009590_1920.webp");
+    min-height: 70rem;
+    .mask{
+        min-height: 70rem;
+        width: 100%;
+        background-color: rgb(0, 0, 0, .6);
+        .container{
+            @include tablet(){
+                height: 45rem;
+            }
+        }
+        .card{
+            position: relative;
+            img{
+                height: 100%;
+            }
+            .tags{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                p{
+                    padding: 1rem 3rem;                
+                }
+            }
+        }
+    }
+
+}
+.memories{
+    img{
+        height: 100%;
+    }
+}
+.send-image{
+    .mask{
+        min-height: 55rem;
+        width: 100%;
+        background-color: rgb(0, 0, 0, .5);
+    }
+}

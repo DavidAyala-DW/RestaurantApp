@@ -1,0 +1,365 @@
+.home{
+    width: 100%;
+    min-height: 70rem;
+    background-image: url("/build/img/header.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    a,h2,p{
+        color: white;
+    }
+}
+.opacity-background{
+    width: 100%;
+    max-height: 70rem;
+    z-index: 2;
+    background-color: rgb(0, 0, 0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.history{
+    background-color: white;
+    box-shadow: -11px 12px 18px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -11px 12px 18px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -11px 12px 18px -5px rgba(0,0,0,0.75);
+    p{
+        color: black;
+    }
+
+    padding: 1rem;
+
+    .containerHistory{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        @include tablet(){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 5rem;
+        }
+        .image{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            height: 30rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 2rem;
+            .image1{
+                height: 100%;
+                background-image: url("/build/img/history1.webp");
+                background-position: center;
+                background-size: cover;
+            }
+            .image2{
+                height: 100%;
+                background-image: url("/build/img/history2.webp");
+                background-position: center;
+                background-size: cover;
+            }
+            .image3{
+                grid-column: 1 / 3;
+                height: 100%;
+                background-image: url("/build/img/pexels-rachel-claire-5531434.webp");
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
+        .text{
+            .ourHistory{
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    height: .5rem;
+                    width: 10rem;
+                    bottom: 0;
+                    left: 0;
+                    background-color: $blue;
+                }
+
+            }
+
+        }
+    }
+}
+.resume-aboutUs{
+    margin-top: 40rem;
+    @include tablet(){
+        margin-top: 20rem;
+    }
+}
+.capacity{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+
+    @include phone(){
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 5rem;
+    }
+
+    .containerCapacity{
+        display: flex;        
+        flex-direction: column;
+        align-items: center;
+        p{
+            text-align: center;
+        }
+    }
+
+}
+.resume-ContactUs{
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @include tablet(){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+        padding: 5rem 3rem;
+    }
+
+    .text{
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .onlyImg{
+
+        height: 50rem;
+        @include tablet(){
+            height: 100%;
+        }
+
+        background-image: url("/build/img/pexels-william-choquette-2641886.webp");
+        background-position: center;
+        background-size: cover;
+    }
+    .hours{
+        height: 50rem;
+        @include tablet(){
+            height: 100%;
+        }
+        background-image: url("/build/img/pexels-mikotoraw-photographer-5763823.webp");
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        p{
+            color: white;
+        }
+        .info{
+            padding: 1rem;
+        }
+    }
+}
+.resume-Menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .options{
+        display: flex;
+        justify-content: space-between;
+    }
+    .allMenu{
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+        @include phone(){
+            gap: 4rem;
+        }
+        @include tablet(){
+            padding-top: 4rem;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2 ,1fr);
+            column-gap: 4rem;
+            row-gap: 8rem;
+        }
+        .food{
+            img{
+                height: 20rem;
+            }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+.offers{
+    min-height: 70rem;
+    background-image: url("/build/img/platter-2009590_1920.webp");
+    background-position: center;
+    background-size: cover;
+    .mask{
+        min-height: 70rem;
+        background-color: rgb(0, 0, 0,0.5);
+    }
+    .containerOffers{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        @include tablet(){
+            display: grid;
+            grid-template-columns: repeat(4 ,1fr);
+            column-gap: 2rem;
+        }
+
+        .offer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            .info{
+                padding: 1rem;
+                p{
+                    color: black;
+                }
+
+            }
+            .image1{
+                background-image: url("/build/img/pexels-ponyo-sakana-3662189.webp");
+            }
+            .image2{
+                background-image: url("/build/img/pexels-kasumi-loffler-3535383.webp");
+            }
+            .image3{
+                background-image: url("/build/img/pexels-samfotograffo-3052362.webp");
+            }
+            .image4{
+                background-image: url("/build/img/pexels-julie-aagaard-2097090.webp");
+            }
+            
+            .image1,.image2,.image3,.image4{
+                z-index: 2;
+                height: 30rem;
+                width: 100%;
+                background-position: center;
+                background-size: cover;
+            }
+
+            position: relative;
+            .price{
+                height: 7rem;
+                width: 7rem;
+                background-color: darken($blue,20%);
+                clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 70%, 0% 100%, 0% 100%, 0.2% 100%);
+                position: absolute;
+                z-index: 3;
+                top :  0;
+                right: calc( 0 + 2rem );
+            }
+        }
+    }
+}
+
+.testimonials{
+
+    .testimonial{
+        padding: 1rem 20%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .profilePhoto{
+            display: flex;
+            justify-content: center;
+            .img{
+                height: 10rem;
+                width: 10rem;
+                border-radius: 50%;
+                background-position: center;
+                background-size: cover;
+            }
+            .img1{
+                background-image: url("/build/img/pexels-andrea-piacquadio-712513.webp");
+            }
+            .img2{
+                background-image: url("/build/img/pexels-daniel-xavier-1212984.webp");
+            }
+            .img3{
+                background-image: url("/build/img/pexels-nitin-khajotia-1516680.webp");
+            }
+        }
+    }
+
+}
+.price{
+    border-top: 2px solid $blue;
+    border-bottom: 2px solid $blue;
+}
+
+.invite{
+    padding: 1rem;
+    .checkout{
+
+        .social{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            gap: 5rem;
+            img{
+                height: 5rem;
+                width: 5rem;
+            }
+        }
+    }
+}
+.flower-opacity{
+    max-height: 54rem;
+    @include tablet(){
+        height: 54rem;
+        background-image: url("/build/img/birdandchildframe.svg");
+        background-size: cover;
+        background-position: center;
+        background-position:unset;
+    }
+}
+.antifilter{
+    max-height: 54rem;
+    @include tablet(){
+        height: 54rem;
+    }
+}
+.select-food{
+    position: relative;
+    color: $blue!important;
+    &::after{
+        background-color: #6e899d;
+        content: "";
+        height: .5rem;
+        right: 0;
+        bottom: calc( 0% - 0.5rem);
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        width: 3rem;
+    }
+}
+.after-content{
+    position: relative;
+    &::after{
+        background-color: #6e899d;
+        content: "";
+        height: .5rem;
+        right: 0;
+        bottom: calc( 0% - 0.5rem);
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        width: 10rem;
+    }
+}

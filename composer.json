@@ -1,0 +1,20 @@
+{
+    "name": "davidayala/restaurant_app",
+    "description": "Restaurant web application\"",
+    "require": {
+        "phpmailer/phpmailer": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "models\\":"./models",
+            "MVC\\":"./",
+            "Controller\\":"./controllers"
+        }
+    },
+    "authors": [
+        {
+            "name": "DavidAyala",
+            "email": "luis.zanabria2@unmsm.edu.pe"
+        }
+    ]
+}

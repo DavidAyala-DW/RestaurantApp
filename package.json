@@ -1,0 +1,35 @@
+{
+  "name": "restaurant-proyect",
+  "version": "1.0.0",
+  "description": "Restaurant web application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "restaurant",
+    "web",
+    "application",
+    "php",
+    "mysql",
+    "s3"
+  ],
+  "author": "DavidAyala",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "cssnano": "^5.0.6",
+    "gulp": "^4.0.2",
+    "gulp-cache": "^1.1.3",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-tinypng": "^1.0.2",
+    "gulp-webp": "^4.0.1",
+    "postcss": "^8.3.6"
+  },
+  "dependencies": {
+    "swiper": "^6.8.1"
+  }
+}

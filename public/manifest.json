@@ -1,0 +1,66 @@
+{
+    "name": "Restaurant Name",
+    "short_name": "Restaurant",
+    "start_url": "/home",
+    "display": "standalone", 
+    "background_color": "#32322C",
+    "theme_color": "#32322C",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "../../build/img/punpun.png",
+            "type": "image/jpg",
+            "sizes": "16x16",
+            "purpose": "any maskable"
+        },
+        {
+        "src": "../../build/img/logo(72).png",
+        "type": "image/png",
+        "sizes": "72x48",
+        "purpose": "any maskable"
+        },
+        {
+        "src": "../../build/img/logo(120).png",
+        "type": "image/png",
+        "sizes": "120x80",
+        "purpose": "any maskable"
+        },
+        {
+        "src": "../../build/img/logo(128).png",
+        "type": "image/png",
+        "sizes": "128x85",
+        "purpose": "any maskable"
+        },
+        {
+        "src": "../../build/img/logo(144).png",
+        "type": "image/png",
+        "sizes": "144x144",
+        "purpose": "any maskable"
+        },
+        {
+        "src": "../../build/img/logo(152).png",
+        "type": "image/png",
+        "sizes": "152x101",
+        "purpose": "any maskable"
+        },
+        {
+        "src": "../../build/img/logo(196).png",
+        "type": "image/png",
+        "sizes": "196x131",
+        "purpose": "any maskable"
+        },
+        {
+        "src": "../../build/img/logo(256).png",
+        "type": "image/png",
+        "sizes": "256x171",
+        "purpose": "any maskable"
+        },
+        {
+        "src": "../../build/img/logo(512).png",
+        "type": "image/png",
+        "sizes": "512x342",
+        "purpose": "any maskable"
+        }
+    ]
+    
+}

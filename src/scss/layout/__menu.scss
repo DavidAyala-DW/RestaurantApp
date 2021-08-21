@@ -1,0 +1,83 @@
+.header-menu{
+    min-height: 30rem;
+    background-image: url("/build/img/pexels-lumn-568370.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .mask{
+        min-height: 30rem;
+        background-color: rgb(0, 0, 0, .5);
+    }
+}
+
+.kindOfFoods{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    .seaFood,.meatFood,.pastaFood{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        @include tablet(){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .text{
+                        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }                    
+        .headMenu{
+            img{
+                height: 5rem;
+                width: 10rem;
+            }
+        }
+        .bodyMenu{  
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .plate{
+                display: flex;
+                gap: 2rem;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.allPlates{
+    .food{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .meat,.pasta,.seafood{
+        transition: all 0.8s ease-in;
+    }
+
+}
+.button_show_more{
+
+    @include tablet(){
+        position: fixed;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+}
+.show_less{
+
+    @include m-tablet(){
+        position: fixed;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+}

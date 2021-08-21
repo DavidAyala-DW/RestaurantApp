@@ -1,0 +1,71 @@
+.nav-bar{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    @include tablet(){
+        background-color: rgb(0, 0, 0, 0);
+        visibility: visible;
+        width: 100vw;
+        height: auto;
+        top: 0;
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+
+        .bar{
+            width: 100%;
+            padding: 2rem;
+            // margin: 0 5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            .actions{
+                display: flex;
+                align-items: center;
+                gap: 2rem; // Aqui hay un gap que en produccion se podra eliminar
+                a{
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 200;
+                    &:hover{
+                        color: $blue!important;
+                    }
+                }
+                svg{
+                    &:hover{
+                        filter: invert(0);
+                        stroke: $blue;
+                    }
+                }
+            }
+    
+            .logo{
+                margin: auto 0;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 800;
+                font-size: 2rem;
+            }
+    
+        }
+    }
+
+}
+
+.fixed-bar{
+    position: fixed;
+    background-color: white;
+    -webkit-box-shadow: 0px 1px 10px 0px #000000; 
+    box-shadow: 0px 1px 10px 0px #000000;
+    a{
+        color: black!important;
+    }
+    svg{
+        filter: invert(1);
+    }
+}
+.m-navBar{
+    @include tablet(){
+        margin-top: 11.9rem;
+    }
+}

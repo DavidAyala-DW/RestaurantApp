@@ -1,0 +1,85 @@
+.header-contactUs{
+    min-height: 30rem;
+    background-image: url("/build/img/pexels-cottonbro-4255412.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .mask{
+        min-height: 30rem;
+        background-color: rgb(0, 0, 0, .5);
+    }
+}
+.joinUs{
+    background-image: url("/build/img/pexels-mikotoraw-photographer-5763823.webp");
+    background-size: cover;
+    p{
+        color: white;
+    }
+    .mask{
+
+        height: 100%;
+        width: 100%;
+        padding: 1rem;
+        background-color: rgb(0, 0, 0, .4);
+        .ourInfo{
+            @include m-tablet(){
+                padding: 2rem 1rem;
+            }
+        }
+    }
+}
+.contact{
+    background-image: url("/build/img/history2.webp");
+    background-size: cover;
+    p{
+        color: white;
+    }
+    .mask{
+        padding: 1rem;
+        background-color: rgb(0, 0, 0, .6);
+    }
+}
+.bg-contact{
+    min-height: 50rem;
+    background-image: url("/build/img/pexels-rachel-claire-5531434.webp");;
+    background-size: cover;
+    .mask{
+        min-height: 50rem;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(0, 0, 0, .5);
+        .location{
+            img{
+                height: 5rem;
+                width: 5rem;
+            }
+        }
+        .ourInfo{
+            img{
+                height: 5rem;
+                width: 5rem;
+            }
+        }
+    }
+}
+
+.formContact{
+
+    input,textarea,.fakeMessage{
+        border: 0;
+        background-color: unset;
+        outline: none;
+        padding: 0;
+    }
+    textarea{   
+        position: fixed;
+        visibility: hidden;
+    }
+    input,.fakeMessage{
+        padding: 1rem 2rem;
+        color: black;
+        background-color: white;
+
+    }
+
+}
